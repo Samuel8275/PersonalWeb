@@ -1,0 +1,141 @@
+/* Normalize */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: #000;
+    color: #ddd;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #333333;
+}
+
+/* NavBar */
+
+.nav {
+    background-color: #0072BB;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.5em;
+}
+
+.nav img {
+    width: 10%;
+}
+
+.nav__ul {
+    list-style: none;
+    width: 50%;
+    display: inherit;
+    justify-content: space-evenly;
+    line-height: 4.5em;
+    margin-left: 1em;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.nav__ul-li a {
+    text-decoration: none;
+    color: black;
+    transition: color .3s;
+}
+
+.nav__ul-li a:hover {
+    color: #CCCCCC;
+}
+
+/* Content */
+
+.section {
+    color: #ddd;
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.article1, .article2, .article3, .article4 {
+    margin: 1em;
+}
+
+.article3__ol {
+    margin-left: 2em;
+}
+
+.article4 {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.article4__a {
+    display: inherit;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.article4__btn {
+    background-color: #0072BB;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 33px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.article4__btn:hover {
+    background-color: #3498db;
+}
+
+/* Footer */
+
+.footer {
+    color:#333;
+    background-color: #AAA;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.footer-section1 {
+    width: 40%;
+}
+
+.footer__ul {
+    list-style: none;
+}
+
+.footer__ul-li a {
+    text-decoration: none;
+    color:#333;
+}
+
+.footer__ul-li a:hover {
+    font-weight: bold;
+}
+
+.footer-bottom {
+    text-align: center;
+}
