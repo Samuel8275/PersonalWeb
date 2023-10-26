@@ -23,7 +23,7 @@ body {
 }
 
 .nav img {
-    width: 10%;
+    width: 5em;
 }
 
 .nav__ul {
@@ -47,6 +47,29 @@ body {
 
 .nav__ul-li a:hover {
     color: #CCCCCC;
+}
+
+/* Content */
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #CCCCCC;
+    margin: 0 0 2em 0;
+}
+
+.producto {
+    max-width: 20em;
+    padding-top: 5em;
+}
+
+.producto__img {
+    width: 10em;
+}
+
+.producto__img:hover {
+    opacity: .7;
 }
 
 /* Footer */

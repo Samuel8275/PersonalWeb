@@ -28,7 +28,7 @@ body {
 }
 
 .nav img {
-    width: 10%;
+    width: 5em;
 }
 
 .nav__ul {
@@ -58,7 +58,7 @@ body {
 
 .section {
     color: #ddd;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
 }
