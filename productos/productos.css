@@ -1,17 +1,3 @@
-/* Normalize */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #333333;
-}
-
 /* NavBar */
 
 .nav {
@@ -55,12 +41,16 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 5em;
+    margin: 5em 5em 9em 5em;
     color: #CCCCCC;
 }
 
 .section1 {
     width: 40%;
+}
+
+.section1 h3 {
+    font-size: 1.6em;
 }
 
 .btn__link {
@@ -126,7 +116,7 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 985px) {
     .section1 {
       width: 80%;
       margin: 0 auto 2em auto;

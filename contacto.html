@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <title>HandGrips Shop</title>
 </head>
 <body>
@@ -16,6 +17,28 @@
         </ul>
         <img src="img/logo.jpeg" alt="hand grip">
     </nav>
+
+    <!-- Content -->
+
+    <form class="form">
+      <div class="inputs">
+        <div class="login">
+          <label for="name" class="label">Nombre:</label>
+          <input id="name" type="text" placeholder="Nombre*" required>
+          <label for="mail" class="label">Mail:</label>
+          <input id="mail" type="email" placeholder="Mail*" required>
+          <label for="telefono" class="label">Numero:</label>
+          <input id="telefono" type="text" placeholder="Teléfono">
+        </div>
+        <div class="mensaje">
+          <label for="mensaje" class="label">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje" required></textarea>
+        </div>
+      </div>
+      <div class="btn__container">
+        <input type="submit" value="Enviar" class="btn">
+      </div>
+    </form>
 
     <!-- Footer -->
     <footer class="footer">

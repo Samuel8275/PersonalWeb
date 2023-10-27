@@ -1,17 +1,3 @@
-/* Normalize */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #333333;
-}
-
 /* NavBar */
 
 .nav {
@@ -47,6 +33,72 @@ body {
 
 .nav__ul-li a:hover {
     color: #CCCCCC;
+}
+
+/* Content */
+
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5em;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #CCCCCC;
+}
+
+.label {
+    font-size: 1.2em;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+.login input {
+    height: 3em;
+    font-size: 1em;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mensaje textarea {
+    height: 40em;
+    width: 30em;
+    resize: none;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 4em 0 0 0;
+}
+
+.btn {
+    background-color: #0072BB;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 33px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #3498db;
 }
 
 /* Footer */
@@ -87,3 +139,15 @@ body {
 .footer-bottom {
     text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+    .inputs {
+        display: flex;
+        justify-content: center;
+    }
+    .login {
+        width: 22em;
+        gap: 20px;
+        margin-bottom: 2em;
+    }
+  }
