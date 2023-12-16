@@ -6,71 +6,42 @@
     <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="styles/contacto.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <script src="https://kit.fontawesome.com/0a5c302eb3.js" crossorigin="anonymous"></script>
     <title>HandGrips Shop</title>
 </head>
 <body>
-    <nav class="nav">
-        <ul class="nav__ul">
-            <li class="nav__ul-li"><a href="index.html">Inicio</a></li>
-            <li class="nav__ul-li"><a href="productos.html">Productos</a></li>
-            <li class="nav__ul-li active"><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <img src="img/logo.jpeg" alt="hand grip">
+    <nav class="nav" id="nav">
+
     </nav>
 
     <!-- Content -->
 
-    <form class="form">
+    <form action="https://formsubmit.co/d7a26c4d289dbc8d486acd93b0f82170" method="POST" class="form">
       <div class="inputs">
         <div class="login">
           <label for="name" class="label">Nombre:</label>
-          <input id="name" type="text" placeholder="Nombre*" required>
+          <input id="name" type="text" placeholder="Nombre*" required name="Nombre">
           <label for="mail" class="label">Mail:</label>
-          <input id="mail" type="email" placeholder="Mail*" required>
+          <input id="mail" type="email" placeholder="Mail*" required name="Mail">
           <label for="telefono" class="label">Numero:</label>
-          <input id="telefono" type="text" placeholder="Teléfono">
+          <input id="telefono" type="text" placeholder="Teléfono" name="Telefono">
         </div>
         <div class="mensaje">
           <label for="mensaje" class="label">Mensaje:</label>
-          <textarea name="mensaje" id="mensaje" required></textarea>
+          <textarea name="Mensaje" id="mensaje" required></textarea>
         </div>
       </div>
       <div class="btn__container">
         <input type="submit" value="Enviar" class="btn">
       </div>
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/PersonalWeb-main/contacto.html">
+      <input type="hidden" name="_captcha" value="false">
     </form>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-section1">
-              <h4>Contacto</h4>
-              <p>Contáctanos para cualquier consulta o asistencia.</p>
-              <p>Email: info@handgripshop.com</p>
-              <p>Teléfono: +34 123 456 789</p>
-            </div>
-            <div class="footer-section2">
-              <h4>Enlaces Rápidos</h4>
-              <ul class="footer__ul">
-                <li class="footer__ul-li"><a href="index.html">Inicio</a></li>
-                <li class="footer__ul-li"><a href="productos.html">Productos</a></li>
-                <li class="footer__ul-li"><a href="contacto.html">Contáctanos</a></li>
-              </ul>
-            </div>
-            <div class="footer-section3">
-              <h4>Redes Sociales</h4>
-              <ul class="footer__ul">
-                <li class="footer__ul-li"><a href="https://github.com/Samuel8275" target="_blank">Github</a></li>
-                <li class="footer__ul-li"><a href="#">Twitter</a></li>
-                <li class="footer__ul-li"><a href="#">Instagram</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <p>&copy; 2023 HandGripShop - Todos los derechos reservados</p>
-          </div>
-        </div>
-      </footer>
+    <footer class="footer" id="foo">
+    </footer>
+
+      <script src="js/cargar.js"></script>
 </body>
 </html>

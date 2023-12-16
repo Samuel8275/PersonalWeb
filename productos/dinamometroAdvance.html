@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,66 +7,55 @@
     <link rel="stylesheet" href="productos.css">
     <link rel="stylesheet" href="../styles/normalize.css">
     <title>HandGrips Shop</title>
+    <script src="https://kit.fontawesome.com/0a5c302eb3.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="nav">
-        <ul class="nav__ul">
-            <li class="nav__ul-li"><a href="../index.html">Inicio</a></li>
-            <li class="nav__ul-li active"><a href="../productos.html">Productos</a></li>
-            <li class="nav__ul-li"><a href="../contacto.html">Contacto</a></li>
-        </ul>
-        <img src="../img/logo.jpeg" alt="hand grip">
-    </nav>
+<body onload="cargarNav2(),cargarFooter2()" id="body">
+    <div id="alerta" class="alert hide">
+        <span class="fas fa-exclamation-circle"></span>
+        <span id="msg" class="msg"></span>
+        <div onclick="cerrar()" class="close-btn">
+            <span class="fas fa-times"></span>
+        </div>
+    </div>
+    <nav class="nav" id="nav2"></nav>
 
     <!-- Content -->
 
     <section class="section">
       <div class="section1">
           <h3>Dinamometro De Gran Calidad</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quisquam saepe minima quae. Voluptatibus odit, saepe ipsa libero facere, magni praesentium deserunt quia quidem nobis pariatur repellendus eaque mollitia repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates commodi vitae quia omnis ad perferendis cupiditate excepturi consequatur, doloribus iure, non libero dolorum. Repellat libero, unde porro nobis animi dignissimos!</p>
+          <p>Experimenta un nivel superior de precisión con nuestro Dinamómetro Avanzado. Diseñado con tecnología de vanguardia, este dispositivo ofrece mediciones detalladas y personalizables de tu fuerza. Su interfaz avanzada te permite realizar evaluaciones más exhaustivas, proporcionando datos precisos para tu análisis. Eleva tus mediciones de fuerza a un nuevo estándar con el Dinamómetro Avanzado, la elección ideal para aquellos que buscan un rendimiento y análisis de datos más profundo.</p>
           <a href="#" class="btn__link">
-              <button class="btn">Comprar!</button>
+              <button class="btn" onclick="handleButtonClick(event)">Comprar!</button>
           </a>
       </div>
       <div class="section2">
-          <img src="../img/Dinamometro.png" alt="Hand Grip Basico" class="section2__img">
-      </div>
+        <img src="../img/Dinamometro.png" alt="Dinanometro Avanzado" class="section2__img" id="miImg">
+        <div id="miVelo" class="velo">
+
+            <!-- The Close Button -->
+            <span class="cerrar">&times;</span>
+
+            <!-- Velo Content (The Image) -->
+            <img class="velo-content" id="img1">
+
+            <!-- Velo Texto (Image Text) -->
+            <div id="texto"></div>
+          </div>
+    </div>
   </section>
-  <a href="#" class="btn__link">
-      <button class="btn2">Comprar!</button>
-  </a>
+  <p class="stock-p">Comprar</p>
+    <input id="stock" type="number" class="stock" min="0">
+    <a href="#" class="btn__link">
+        <button type="button" class="btn2" onclick="handleButtonClick(event)">Comprar!</button>
+    </a>
+    <h3 class="h3__stock">Stock: <span id="unidades">18</span> unidades</h3>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-section1">
-              <h4>Contacto</h4>
-              <p>Contáctanos para cualquier consulta o asistencia.</p>
-              <p>Email: info@handgripshop.com</p>
-              <p>Teléfono: +34 123 456 789</p>
-            </div>
-            <div class="footer-section2">
-              <h4>Enlaces Rápidos</h4>
-              <ul class="footer__ul">
-                <li class="footer__ul-li"><a href="../index.html">Inicio</a></li>
-                <li class="footer__ul-li"><a href="../productos.html">Productos</a></li>
-                <li class="footer__ul-li"><a href="../contacto.html">Contáctanos</a></li>
-              </ul>
-            </div>
-            <div class="footer-section3">
-              <h4>Redes Sociales</h4>
-              <ul class="footer__ul">
-                <li class="footer__ul-li"><a href="https://github.com/Samuel8275" target="_blank">Github</a></li>
-                <li class="footer__ul-li"><a href="#">Twitter</a></li>
-                <li class="footer__ul-li"><a href="#">Instagram</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <p>&copy; 2023 HandGripShop - Todos los derechos reservados</p>
-          </div>
-        </div>
-      </footer>
+    <footer class="footer" id="foo2"></footer>
+
+    <script src="../js/cargar.js"></script>
+    <script src="../js/stock.js"></script>
+    <script src="../js/velo.js"></script>
 </body>
 </html>

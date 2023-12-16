@@ -21,7 +21,7 @@
     margin-left: 1em;
 }
 
-.active {
+.active2 {
     font-weight: bold;
 }
 
@@ -87,6 +87,7 @@
 .footer__ul-li a {
     text-decoration: none;
     color:#333;
+    padding-left: 3px;
 }
 
 .footer__ul-li a:hover {
